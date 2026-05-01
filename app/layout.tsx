@@ -4,6 +4,7 @@ import { Playfair_Display, DM_Sans } from 'next/font/google';
 import './globals.css';
 import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
 
+import { KorivaLivePreview } from '@/components/KorivaLivePreview';
 const playfair = Playfair_Display({ subsets: ['latin'], weight: ['400', '500', '700'], style: ['normal', 'italic'], variable: '--font-playfair' });
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300', '400', '500', '600'], variable: '--font-dm' });
 
@@ -17,7 +18,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const vars = buildCssVars(cfg?.brand);
   return (
     <html lang="en" style={vars as React.CSSProperties}>
-      <body className={`${playfair.variable} ${dmSans.variable}`}>{children}</body>
+      <body className={`${playfair.variable} ${dmSans.variable}`}>{children}<KorivaLivePreview /></body>
     </html>
   );
 }
