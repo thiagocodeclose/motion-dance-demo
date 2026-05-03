@@ -180,7 +180,7 @@ export default function MotionPage() {
         <div className="mn-hero-overlay" />
         <div className="mn-hero-content">
           <p className="mn-hero-eyebrow">{d.gym.location} · Dance Studio</p>
-          <h1 className="mn-hero-title">Move.</h1>
+          <h1 data-cg-el="hero_headline_1" className="mn-hero-title">Move.</h1>
           <div className="mn-hero-title-italic">Express.</div>
           <h1 className="mn-hero-title" style={{ color: 'var(--mn-primary-light)' }}>Transform.</h1>
           <p className="mn-hero-sub" style={{ marginTop: '1.5rem' }}>{d.gym.name} is Los Angeles' most celebrated dance studio — a space where technique meets artistry and every body finds its rhythm.</p>
