@@ -289,7 +289,7 @@ export default function MotionPage() {
           <div className="mn-footer-logo"><em>Motion</em> <span>·</span> Dance Studio</div>
           <div className="mn-footer-info">{d.gym.address}<br />{d.gym.phone} · {d.gym.email}</div>
         </div>
-        <div className="mn-footer-copy">© {new Date().getFullYear()} {d.gym.name}. Powered by Koriva.</div>
+        <div className="mn-footer-copy">© {new Date().getFullYear()} {d.gym.name}. Powered by Garrison365.</div>
       </footer>
     </>
   );
